@@ -13,7 +13,7 @@ function toggleBounce() {
 function initMap() {
     "use strict";
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
+        zoom: 16,
         center: {
             lat: 33.5883,
             lng: -91.8131
@@ -23,6 +23,7 @@ function initMap() {
     marker = new google.maps.Marker({
         map: map,
         draggable: true,
+        title: "UAM Wesley",
         animation: google.maps.Animation.DROP,
         position: {
             lat: 33.5883,
